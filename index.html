@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Om Kumar Singh – Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f4; --ink:#14213d; --muted:#55607a; --line:#c9d0dc; --accent:#2f4bff; --mark:#ffd23f; --card:#f8f9fb;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#10162a;--ink:#e8ecf6;--muted:#97a2bd;--line:#2a3354;--accent:#8fa2ff;--mark:#ffd23f;--card:#171f3a;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#10162a;--ink:#e8ecf6;--muted:#97a2bd;--line:#2a3354;--accent:#8fa2ff;--mark:#ffd23f;--card:#171f3a;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.6 "Newsreader",Georgia,serif}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:300px 1fr;gap:64px}
+aside{position:sticky;top:0;align-self:start;padding:64px 0}
+h1{font:800 clamp(2.6rem,5vw,3.6rem)/.98 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.03em;margin:0 0 16px}
+.role{font:500 1.05rem/1.4 "Bricolage Grotesque",system-ui,sans-serif;color:var(--muted);margin:0 0 28px}
+nav{display:flex;flex-direction:column;gap:6px;font:500 1rem "Bricolage Grotesque",system-ui,sans-serif}
+nav a{text-decoration:none;padding:2px 0;width:max-content;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--accent)}
+.contact{margin-top:32px;font-size:1rem;color:var(--muted)}
+.contact a{color:var(--ink)}
+main{padding:64px 0 96px}
+section{margin-bottom:72px}
+h2{font:700 1.5rem/1.2 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 24px;letter-spacing:-.01em}
+.intro{font-size:1.4rem;line-height:1.5;margin:0 0 72px;max-width:34em}
+.intro mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit}
+.proj{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:28px 0;border-top:1px solid var(--line)}
+.proj:last-child{border-bottom:1px solid var(--line)}
+.ver{font:700 .95rem "Bricolage Grotesque",system-ui,sans-serif;color:var(--accent);padding-top:4px}
+.proj h3{font:700 1.35rem/1.25 "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 6px}
+.proj p{margin:0 0 12px;color:var(--muted);max-width:38em}
+.stack{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;padding:0;list-style:none;font:500 .9rem "Bricolage Grotesque",system-ui,sans-serif}
+.stack li{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:2px 10px}
+.links{font:500 1rem "Bricolage Grotesque",system-ui,sans-serif;display:flex;gap:20px}
+.pts{margin:12px 0 0;padding-left:1.1em;color:var(--muted)}
+.pts li{margin:0 0 6px;max-width:40em}
+.pts b{color:var(--ink);font-weight:500}
+.flag{border-left:4px solid var(--accent);padding-left:20px}
+.flag h3{font-size:1.6rem}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.skills h3{font:700 1rem "Bricolage Grotesque",system-ui,sans-serif;margin:0 0 8px;color:var(--accent)}
+.skills p{margin:0;color:var(--muted)}
+.exp>div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--line)}
+.exp>div>span:last-child{color:var(--muted);white-space:nowrap}
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;gap:0}
+  aside{position:static;padding:48px 0 0}
+  nav{flex-direction:row;gap:20px}
+  main{padding-top:40px}
+  .proj{grid-template-columns:1fr;gap:4px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <h1>Om Kumar Singh</h1>
+    <p class="role">Software engineer focused on Java and Spring Boot backends, with React on the front.</p>
+    <nav aria-label="Sections">
+      <a href="#work">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#leadership">Leadership</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:omkumar312003@gmail.com">omkumar312003@gmail.com</a><br>
+      <a href="tel:+917982842679">+91 79828 42679</a><br>
+      <a href="https://drive.google.com/file/d/1sArNSaOJR9LF56d-N7R0Nw-o-QiJoEEs/view?usp=drivesdk" target="_blank" rel="noopener">Resume</a> · <a href="https://www.linkedin.com/in/omkumars20/">LinkedIn</a> · <a href="https://github.com/omkumars31">GitHub</a> · <a href="https://leetcode.com/u/omkumars20/">LeetCode</a> · <a href="https://codolio.com/profile/omkumars20">Codolio</a>
+    </p>
+  </aside>
+
+  <main>
+    <p class="intro">I’m a 2026 B.Tech graduate focused on Java, Spring Boot and backend engineering. I build REST APIs and database-driven systems with an emphasis on <mark>transaction safety, concurrency, idempotency</mark> and automated testing. My projects include a credit card billing system, a real-time fraud monitoring dashboard and a healthcare analytics prototype. I’m looking for software engineering roles where I can build reliable, maintainable software.</p>
+
+    <section id="work">
+      <h2>Projects</h2>
+      <article class="proj flag">
+        <div class="ver">Featured<br>Backend</div>
+        <div>
+          <h3>Credit Card Billing &amp; Statement Management System</h3>
+          <p>A Java and Spring Boot backend for credit card billing, statement generation and payment processing, designed around transaction safety and reliable handling of retries.</p>
+          <ul class="pts">
+            <li><b>Payment correctness:</b> idempotency and transactional processing to prevent duplicate payment effects on retries.</li>
+            <li><b>Concurrency control:</b> pessimistic locking to coordinate concurrent payment operations.</li>
+            <li><b>Database design:</b> 11-table normalized MySQL schema, with migrations managed by Flyway.</li>
+            <li><b>Testing:</b> 140+ automated tests with JUnit 5, Mockito and MockMvc, at 80%+ line coverage.</li>
+            <li><b>Access control:</b> role-based authorization with Spring Security across 5+ financial operations.</li>
+          </ul>
+          <p>40+ REST APIs. Payments were validated under 100 concurrent requests with no duplicate successes in tested retries. Selected endpoints measured under 200 ms p95 under load.</p>
+          <ul class="stack"><li>Java 17</li><li>Spring Boot 3</li><li>Spring Security</li><li>Spring Data JPA</li><li>Hibernate</li><li>MySQL</li><li>Flyway</li><li>JUnit 5</li><li>Mockito</li></ul>
+          <div class="links"><a href="https://github.com/omkumars31/credit-card-management-system">Source code</a></div>
+        </div>
+      </article>
+      <article class="proj">
+        <div class="ver">Real-time</div>
+        <div>
+          <h3>PulseWatch</h3>
+          <p>A fraud monitoring platform that simulates live UPI payment traffic (no real payment data) and scores each transaction for risk: unusual frequency, sudden location changes, odd amounts, odd-hour activity and new payees. Transactions, alerts and risk updates stream to live dashboards over WebSockets, and alerts and transactions are stored in PostgreSQL through Prisma.</p>
+          <ul class="stack"><li>React</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>WebSockets</li><li>PostgreSQL</li><li>Prisma</li></ul>
+          <div class="links"><a href="https://github.com/omkumars31/PulseWatch-Real-Time-Fraud-Detection-Risk-Intelligence-Platform">Source code</a></div>
+        </div>
+      </article>
+      <article class="proj">
+        <div class="ver">Full-stack, ML</div>
+        <div>
+          <h3>LifePredict</h3>
+          <p>An AI-powered healthcare analytics prototype where patients and doctors manage health data, review prediction history and connect with each other. Two role-specific dashboards across 15+ pages, backed by a Node.js API and a separate FastAPI inference service. It is a deployed prototype, not a clinical system.</p>
+          <p>XGBoost and Random Forest models cover 5+ risk-prediction tasks on 10,000+ records, reaching 85–90% accuracy and 0.88 ROC-AUC in my own evaluation. SHAP explanations and what-if simulations show which inputs drive each risk. JWT auth and bcrypt hashing protect accounts; deployed on Vercel and Railway.</p>
+          <ul class="stack"><li>React</li><li>Node.js</li><li>Express</li><li>FastAPI</li><li>XGBoost</li><li>SHAP</li><li>MySQL</li></ul>
+          <div class="links"><a href="https://life-predict.vercel.app/">Live prototype</a><a href="https://github.com/omkumars31/LifePredict">Source code</a></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="exp">
+      <h2>Experience</h2>
+      <div><span><b>Software Development Intern</b>, Syvash Technologies (remote)</span><span>Jan – Jun 2026</span></div>
+      <ul class="pts">
+        <li>Built 8+ reusable React components for DentalKart, reducing duplicated UI code by 30% across 10+ pages.</li>
+        <li>Integrated 5+ REST API endpoints and delivered 2 role-based dashboards in 4 weeks for about 150 active users, using React, shadcn/ui and TanStack Table.</li>
+        <li>Worked across 6+ Agile sprints and merged 20+ pull requests.</li>
+      </ul>
+    </section>
+
+    <section id="education" class="exp">
+      <h2>Education</h2>
+      <div><span><b>B.Tech, Electrical &amp; Computer Engineering</b>, Bharati Vidyapeeth College of Engineering, Pune. CGPA 8.32.</span><span>2022 – 2026</span></div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Java and core CS</h3><p>Java, OOD, Collections, Multithreading, DSA, concurrency control, idempotency, transactions</p></div>
+        <div><h3>Backend</h3><p>Spring Boot, Spring Security, Spring Data JPA, Hibernate, REST API design</p></div>
+        <div><h3>Databases</h3><p>MySQL, PostgreSQL, SQL, schema design, normalization, Flyway, Prisma</p></div>
+        <div><h3>Testing and tools</h3><p>JUnit 5, Mockito, MockMvc, Maven, Git, GitHub, Postman, Agile</p></div>
+        <div><h3>Frontend</h3><p>React, TypeScript, TanStack Table, shadcn/ui, HTML, CSS</p></div>
+        <div><h3>Also used</h3><p>JavaScript, Node.js, Express, WebSockets, C++</p></div>
+      </div>
+    </section>
+
+    <section id="leadership" class="exp">
+      <h2>Leadership &amp; achievements</h2>
+      <div><span><b>President</b>, Training &amp; Placement Dept., BVDU COE: led a 150+ member team coordinating placement activities for 500+ students across 50+ drives</span><span>May 2025 – May 2026</span></div>
+      <div><span><b>Coordinator</b>, Training &amp; Placement Dept.: conducted 20+ resume sessions and mock interviews</span><span>Aug 2023 – Apr 2025</span></div>
+      <div><span><b>Research:</b> co-authored “ML-Driven Predictive Analytics for Preventive Healthcare”, accepted at RRRAI 2026 and recommended for IEEE Xplore indexing</span><span>2026</span></div>
+      <div><span><b>Competitive programming:</b> 700+ problems solved on LeetCode, Codeforces and GeeksforGeeks</span><span></span></div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
